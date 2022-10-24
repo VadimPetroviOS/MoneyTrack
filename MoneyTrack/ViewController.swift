@@ -203,7 +203,7 @@ class ViewController: UIViewController {
         return imageView
     }()
     
-    let beautyImage: UIImageView = {
+    let healthImage: UIImageView = {
         let imageView = UIImageView()
         imageView.image = UIImage(named: "")
         return imageView
@@ -213,6 +213,50 @@ class ViewController: UIViewController {
         let imageView = UIImageView()
         imageView.image = UIImage(named: "")
         return imageView
+    }()
+    
+    // LabelsImage
+    
+    let foodLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Еда"
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
+    let clotheslabel: UILabel = {
+        let label = UILabel()
+        label.text = "Одежда"
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
+    let callLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Связь"
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
+    let relaxLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Досуг"
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
+    let healthLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Здоровье"
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
+    let autoLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Авто"
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
     }()
     
     override func viewDidLoad() {
