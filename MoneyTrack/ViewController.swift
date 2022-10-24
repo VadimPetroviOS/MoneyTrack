@@ -179,6 +179,41 @@ class ViewController: UIViewController {
     
     // images
     
+    let foodImage: UIImageView = {
+        let imageView = UIImageView()
+        imageView.image = UIImage(named: "")
+        return imageView
+    }()
+    
+    let clothesImage: UIImageView = {
+        let imageView = UIImageView()
+        imageView.image = UIImage(named: "")
+        return imageView
+    }()
+    
+    let callImage: UIImageView = {
+        let imageView = UIImageView()
+        imageView.image = UIImage(named: "")
+        return imageView
+    }()
+    
+    let relaxImage: UIImageView = {
+        let imageView = UIImageView()
+        imageView.image = UIImage(named: "")
+        return imageView
+    }()
+    
+    let beautyImage: UIImageView = {
+        let imageView = UIImageView()
+        imageView.image = UIImage(named: "")
+        return imageView
+    }()
+    
+    let autoImage: UIImageView = {
+        let imageView = UIImageView()
+        imageView.image = UIImage(named: "")
+        return imageView
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
