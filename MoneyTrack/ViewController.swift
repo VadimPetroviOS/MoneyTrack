@@ -12,9 +12,15 @@ class ViewController: UIViewController {
     //TextFields
     
     let valueTF: UITextField = {
-        let tf = UITextField()
-        tf.translatesAutoresizingMaskIntoConstraints = false
-        return tf
+        let textField = UITextField()
+        textField.layer.cornerRadius = 15
+        textField.backgroundColor = UIColor(white: 0.6, alpha: 0.3)
+        textField.textColor = .darkGray
+        textField.font = .boldSystemFont(ofSize: 30)
+        textField.placeholder = "0"
+        textField.textAlignment = .right
+        textField.translatesAutoresizingMaskIntoConstraints = false
+        return textField
     }()
     
     //Labels
@@ -259,11 +265,79 @@ class ViewController: UIViewController {
         return label
     }()
     
+    //StackView
+    
+    let viewOne: UIView = {
+        let view = UIView()
+        view.backgroundColor = .systemRed
+        return view
+    }()
+    
+    let viewFour: UIView = {
+        let view = UIView()
+        view.backgroundColor = .systemCyan
+        return view
+    }()
+    
+    let viewFive: UIView = {
+        let view = UIView()
+        view.backgroundColor = .systemPink
+        return view
+    }()
+    
+    let stackView: UIStackView = {
+        let viewTwo: UIView = {
+            let view = UIView()
+            view.backgroundColor = .systemGreen
+            return view
+        }()
+        let viewThree: UIView = {
+            let view = UIView()
+            view.backgroundColor = .systemBlue
+            return view
+        }()
+        let stack = UIStackView(arrangedSubviews: [viewTwo, viewThree])
+        stack.distribution = .fillEqually
+        stack.spacing = 10
+        stack.translatesAutoresizingMaskIntoConstraints = false
+        return stack
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        view.backgroundColor = .white
+        view.addSubview(valueTF)
+        doInterface()
+        
     }
 
+    func doInterface() {
+        let stack = UIStackView(arrangedSubviews: [valueTF, stackView, viewFour, viewFive])
+        stack.axis = .vertical
+        stack.spacing = 10
+        //stack.alignment = .center
+        //stack.distribution = .fillEqually
+        stack.translatesAutoresizingMaskIntoConstraints = false
+        
+        view.addSubview(stack)
+        
+        NSLayoutConstraint.activate([
+            
+            stack.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            stack.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10),
+            stack.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10),
+            stack.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
+            
+            valueTF.heightAnchor.constraint(equalToConstant: 70),
+            stackView.heightAnchor.constraint(equalToConstant: 300),
+            viewFour.heightAnchor.constraint(equalToConstant: 100),
+            
+            stackView.topAnchor.constraint(equalTo: valueTF.bottomAnchor, constant: 10),
+            stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10),
+            stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10),
+            
+        ])
+    }
 
 }
 
