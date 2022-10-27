@@ -16,6 +16,11 @@
 		7D07DC7828F974E60097382A /* MoneyTrackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D07DC7728F974E60097382A /* MoneyTrackTests.swift */; };
 		7D07DC8228F974E60097382A /* MoneyTrackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D07DC8128F974E60097382A /* MoneyTrackUITests.swift */; };
 		7D07DC8428F974E70097382A /* MoneyTrackUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D07DC8328F974E70097382A /* MoneyTrackUITestsLaunchTests.swift */; };
+		7D07DC91290B13450097382A /* TFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D07DC90290B13440097382A /* TFViewController.swift */; };
+		7D07DC93290B14220097382A /* CostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D07DC92290B14220097382A /* CostViewController.swift */; };
+		7D07DC95290B14A60097382A /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D07DC94290B14A60097382A /* CalculatorViewController.swift */; };
+		7D07DC97290B151A0097382A /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D07DC96290B151A0097382A /* CategoriesViewController.swift */; };
+		7D07DC99290B156D0097382A /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D07DC98290B156D0097382A /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		7D07DC7D28F974E60097382A /* MoneyTrackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoneyTrackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D07DC8128F974E60097382A /* MoneyTrackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyTrackUITests.swift; sourceTree = "<group>"; };
 		7D07DC8328F974E70097382A /* MoneyTrackUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyTrackUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7D07DC90290B13440097382A /* TFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFViewController.swift; sourceTree = "<group>"; };
+		7D07DC92290B14220097382A /* CostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostViewController.swift; sourceTree = "<group>"; };
+		7D07DC94290B14A60097382A /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
+		7D07DC96290B151A0097382A /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
+		7D07DC98290B156D0097382A /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +112,11 @@
 				7D07DC6028F974E40097382A /* AppDelegate.swift */,
 				7D07DC6228F974E40097382A /* SceneDelegate.swift */,
 				7D07DC6428F974E40097382A /* ViewController.swift */,
+				7D07DC98290B156D0097382A /* TableViewController.swift */,
+				7D07DC96290B151A0097382A /* CategoriesViewController.swift */,
+				7D07DC94290B14A60097382A /* CalculatorViewController.swift */,
+				7D07DC92290B14220097382A /* CostViewController.swift */,
+				7D07DC90290B13440097382A /* TFViewController.swift */,
 				7D07DC6628F974E40097382A /* Main.storyboard */,
 				7D07DC6928F974E60097382A /* Assets.xcassets */,
 				7D07DC6B28F974E60097382A /* LaunchScreen.storyboard */,
@@ -258,8 +273,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D07DC93290B14220097382A /* CostViewController.swift in Sources */,
 				7D07DC6528F974E40097382A /* ViewController.swift in Sources */,
 				7D07DC6128F974E40097382A /* AppDelegate.swift in Sources */,
+				7D07DC99290B156D0097382A /* TableViewController.swift in Sources */,
+				7D07DC91290B13450097382A /* TFViewController.swift in Sources */,
+				7D07DC95290B14A60097382A /* CalculatorViewController.swift in Sources */,
+				7D07DC97290B151A0097382A /* CategoriesViewController.swift in Sources */,
 				7D07DC6328F974E40097382A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
