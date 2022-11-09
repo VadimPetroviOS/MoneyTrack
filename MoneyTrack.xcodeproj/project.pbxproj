@@ -21,6 +21,7 @@
 		7D07DC95290B14A60097382A /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D07DC94290B14A60097382A /* CalculatorViewController.swift */; };
 		7D07DC97290B151A0097382A /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D07DC96290B151A0097382A /* CategoriesViewController.swift */; };
 		7D07DC99290B156D0097382A /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D07DC98290B156D0097382A /* TableViewController.swift */; };
+		7DD552FA291BE61400EB1E48 /* TopCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD552F9291BE61400EB1E48 /* TopCollectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		7D07DC94290B14A60097382A /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 		7D07DC96290B151A0097382A /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
 		7D07DC98290B156D0097382A /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		7DD552F9291BE61400EB1E48 /* TopCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopCollectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				7D07DC96290B151A0097382A /* CategoriesViewController.swift */,
 				7D07DC94290B14A60097382A /* CalculatorViewController.swift */,
 				7D07DC92290B14220097382A /* CostViewController.swift */,
+				7DD552F9291BE61400EB1E48 /* TopCollectionView.swift */,
 				7D07DC90290B13440097382A /* TFViewController.swift */,
 				7D07DC6628F974E40097382A /* Main.storyboard */,
 				7D07DC6928F974E60097382A /* Assets.xcassets */,
@@ -273,6 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DD552FA291BE61400EB1E48 /* TopCollectionView.swift in Sources */,
 				7D07DC93290B14220097382A /* CostViewController.swift in Sources */,
 				7D07DC6528F974E40097382A /* ViewController.swift in Sources */,
 				7D07DC6128F974E40097382A /* AppDelegate.swift in Sources */,
