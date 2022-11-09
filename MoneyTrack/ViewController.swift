@@ -423,11 +423,11 @@ class ViewController: UIViewController {
             
             costVC.view.topAnchor.constraint(equalTo: textFieldVC.view.bottomAnchor, constant: 10),
             costVC.view.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10),
-            costVC.view.trailingAnchor.constraint(equalTo: view.centerXAnchor, constant: -5),
+            costVC.view.trailingAnchor.constraint(equalTo: view.centerXAnchor, constant: -55),
             costVC.view.heightAnchor.constraint(equalToConstant: 300),
             
             calculatorVC.view.topAnchor.constraint(equalTo: textFieldVC.view.bottomAnchor, constant: 10),
-            calculatorVC.view.leadingAnchor.constraint(equalTo: view.centerXAnchor, constant: 5),
+            calculatorVC.view.leadingAnchor.constraint(equalTo: view.centerXAnchor, constant: -40),
             calculatorVC.view.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10),
             calculatorVC.view.heightAnchor.constraint(equalToConstant: 300),
             
