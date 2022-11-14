@@ -18,9 +18,12 @@
 		7D07DC8428F974E70097382A /* MoneyTrackUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D07DC8328F974E70097382A /* MoneyTrackUITestsLaunchTests.swift */; };
 		7D07DC91290B13450097382A /* TFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D07DC90290B13440097382A /* TFViewController.swift */; };
 		7D07DC93290B14220097382A /* CostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D07DC92290B14220097382A /* CostViewController.swift */; };
-		7D07DC95290B14A60097382A /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D07DC94290B14A60097382A /* CalculatorViewController.swift */; };
+		7D07DC95290B14A60097382A /* TopCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D07DC94290B14A60097382A /* TopCalculatorViewController.swift */; };
 		7D07DC97290B151A0097382A /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D07DC96290B151A0097382A /* CategoriesViewController.swift */; };
 		7D07DC99290B156D0097382A /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D07DC98290B156D0097382A /* TableViewController.swift */; };
+		7D5E0D46291CDAE300F3FE2B /* BotCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5E0D45291CDAE300F3FE2B /* BotCalculatorViewController.swift */; };
+		7D5E0D48291D08DE00F3FE2B /* TopButtonNumberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5E0D47291D08DE00F3FE2B /* TopButtonNumberCell.swift */; };
+		7D9500B9291E6A6B0013F3AE /* BotButtonNumberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9500B8291E6A6B0013F3AE /* BotButtonNumberCell.swift */; };
 		7DD552FA291BE61400EB1E48 /* TopCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD552F9291BE61400EB1E48 /* TopCollectionView.swift */; };
 /* End PBXBuildFile section */
 
@@ -57,9 +60,12 @@
 		7D07DC8328F974E70097382A /* MoneyTrackUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyTrackUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7D07DC90290B13440097382A /* TFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFViewController.swift; sourceTree = "<group>"; };
 		7D07DC92290B14220097382A /* CostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostViewController.swift; sourceTree = "<group>"; };
-		7D07DC94290B14A60097382A /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
+		7D07DC94290B14A60097382A /* TopCalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopCalculatorViewController.swift; sourceTree = "<group>"; };
 		7D07DC96290B151A0097382A /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
 		7D07DC98290B156D0097382A /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		7D5E0D45291CDAE300F3FE2B /* BotCalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotCalculatorViewController.swift; sourceTree = "<group>"; };
+		7D5E0D47291D08DE00F3FE2B /* TopButtonNumberCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopButtonNumberCell.swift; sourceTree = "<group>"; };
+		7D9500B8291E6A6B0013F3AE /* BotButtonNumberCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotButtonNumberCell.swift; sourceTree = "<group>"; };
 		7DD552F9291BE61400EB1E48 /* TopCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopCollectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,7 +122,10 @@
 				7D07DC6428F974E40097382A /* ViewController.swift */,
 				7D07DC98290B156D0097382A /* TableViewController.swift */,
 				7D07DC96290B151A0097382A /* CategoriesViewController.swift */,
-				7D07DC94290B14A60097382A /* CalculatorViewController.swift */,
+				7D07DC94290B14A60097382A /* TopCalculatorViewController.swift */,
+				7D5E0D45291CDAE300F3FE2B /* BotCalculatorViewController.swift */,
+				7D5E0D47291D08DE00F3FE2B /* TopButtonNumberCell.swift */,
+				7D9500B8291E6A6B0013F3AE /* BotButtonNumberCell.swift */,
 				7D07DC92290B14220097382A /* CostViewController.swift */,
 				7DD552F9291BE61400EB1E48 /* TopCollectionView.swift */,
 				7D07DC90290B13440097382A /* TFViewController.swift */,
@@ -278,13 +287,16 @@
 			files = (
 				7DD552FA291BE61400EB1E48 /* TopCollectionView.swift in Sources */,
 				7D07DC93290B14220097382A /* CostViewController.swift in Sources */,
+				7D5E0D46291CDAE300F3FE2B /* BotCalculatorViewController.swift in Sources */,
 				7D07DC6528F974E40097382A /* ViewController.swift in Sources */,
 				7D07DC6128F974E40097382A /* AppDelegate.swift in Sources */,
 				7D07DC99290B156D0097382A /* TableViewController.swift in Sources */,
 				7D07DC91290B13450097382A /* TFViewController.swift in Sources */,
-				7D07DC95290B14A60097382A /* CalculatorViewController.swift in Sources */,
+				7D07DC95290B14A60097382A /* TopCalculatorViewController.swift in Sources */,
 				7D07DC97290B151A0097382A /* CategoriesViewController.swift in Sources */,
 				7D07DC6328F974E40097382A /* SceneDelegate.swift in Sources */,
+				7D9500B9291E6A6B0013F3AE /* BotButtonNumberCell.swift in Sources */,
+				7D5E0D48291D08DE00F3FE2B /* TopButtonNumberCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
