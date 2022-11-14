@@ -382,7 +382,8 @@ class ViewController: UIViewController {
     
     let textFieldVC = TFViewController()
     let costVC = CostViewController()
-    let calculatorVC = CalculatorViewController()
+    let topCalculatorVC = TopCalculatorViewController()
+    let botCalculatorVC = BotCalculatorViewController()
     let categoriesVC = CategoriesViewController()
     let tableVC = TableViewController()
     
@@ -397,10 +398,15 @@ class ViewController: UIViewController {
         costVC.view.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(costVC.view)
         
-        addChild(calculatorVC)
-        calculatorVC.didMove(toParent: self)
-        calculatorVC.view.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(calculatorVC.view)
+        addChild(topCalculatorVC)
+        topCalculatorVC.didMove(toParent: self)
+        topCalculatorVC.view.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(topCalculatorVC.view)
+        
+        addChild(botCalculatorVC)
+        botCalculatorVC.didMove(toParent: self)
+        botCalculatorVC.view.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(botCalculatorVC.view)
         
         addChild(categoriesVC)
         categoriesVC.didMove(toParent: self)
@@ -426,10 +432,15 @@ class ViewController: UIViewController {
             costVC.view.trailingAnchor.constraint(equalTo: view.centerXAnchor, constant: -55),
             costVC.view.heightAnchor.constraint(equalToConstant: 300),
             
-            calculatorVC.view.topAnchor.constraint(equalTo: textFieldVC.view.bottomAnchor, constant: 10),
-            calculatorVC.view.leadingAnchor.constraint(equalTo: view.centerXAnchor, constant: -40),
-            calculatorVC.view.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10),
-            calculatorVC.view.heightAnchor.constraint(equalToConstant: 300),
+            topCalculatorVC.view.topAnchor.constraint(equalTo: textFieldVC.view.bottomAnchor, constant: 10),
+            topCalculatorVC.view.leadingAnchor.constraint(equalTo: view.centerXAnchor, constant: -40),
+            topCalculatorVC.view.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10),
+            topCalculatorVC.view.heightAnchor.constraint(equalToConstant: 225),
+            
+            botCalculatorVC.view.topAnchor.constraint(equalTo: topCalculatorVC.view.bottomAnchor),
+            botCalculatorVC.view.leadingAnchor.constraint(equalTo: view.centerXAnchor, constant: -40),
+            botCalculatorVC.view.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10),
+            botCalculatorVC.view.heightAnchor.constraint(equalToConstant: 75),
             
             categoriesVC.view.topAnchor.constraint(equalTo: costVC.view.bottomAnchor, constant: 10),
             categoriesVC.view.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10),
@@ -440,6 +451,7 @@ class ViewController: UIViewController {
             tableVC.view.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10),
             tableVC.view.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10),
             tableVC.view.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
+            
         ])
     }
 }
