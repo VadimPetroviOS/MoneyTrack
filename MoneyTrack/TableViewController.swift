@@ -7,24 +7,45 @@
 
 import UIKit
 
-class TableViewController: UIViewController {
-
+class TableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    let identifier = "myTableView"
+    let myTableView = UITableView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        myTableView.delegate = self
+        myTableView.dataSource = self
+        myTableView.register(UITableViewCell.self, forCellReuseIdentifier: identifier)
         view.backgroundColor = .systemPink
-        // Do any additional setup after loading the view.
+        view.addSubview(myTableView)
+        addConstraint()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        myTableView.frame = view.bounds
     }
-    */
+    
+    private func addConstraint() {
+        NSLayoutConstraint.activate([
+            
+            myTableView.topAnchor.constraint(equalTo: view.topAnchor),
+            myTableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            myTableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            myTableView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+            
+        ])
+    }
+}
 
+extension TableViewController {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = myTableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath)
+        return cell
+    }
 }
